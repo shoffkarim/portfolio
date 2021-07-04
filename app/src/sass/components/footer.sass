@@ -28,6 +28,10 @@
       display: block
       width: 30px
       height: auto
+      opacity: 1
+      transition: all 0.4s
+      &:hover
+        opacity: 0.5
       svg
         width: 100%
         height: auto
@@ -35,6 +39,10 @@
           fill: #fff
   &-contact
     @include dfr()
+    opacity: 1
+    transition: all 0.4s
+    &:hover
+      opacity: 0.5
     &__icon
       width: 30px
       height: auto

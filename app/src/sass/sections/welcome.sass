@@ -1,8 +1,32 @@
 .welcome
   margin-top: 70px
+  position: relative
+  &::after
+    content: ""
+    position: absolute
+    top: 0
+    left: -200px
+    width: 700px
+    height: 700px
+    border-radius: 50%
+    border: 1px solid #1f2128
+    z-index: 1
+    background-color: #1e212d
+  &::before
+    content: ""
+    position: absolute
+    top: 500px
+    right: -200px
+    width: 700px
+    height: 700px
+    border-radius: 50%
+    border: 1px solid #1f2128
+    z-index: 1
   .container
     @include dfc()
     align-items: center
+    position: relative
+    z-index: 2
   &-photo
     width: 180px
     height: 180px
@@ -28,6 +52,8 @@
 
 .contacts
   margin-top: 30px
+  max-width: 300px
+  width: 100%
   &-button
     background-color: #fff
     color: #0c0e10
@@ -44,6 +70,10 @@
   &-item
     width: 30px
     height: auto
+    opacity: 1
+    transition: all 0.4s
+    &:hover
+      opacity: 0.5
     svg
       width: 100%
       height: auto

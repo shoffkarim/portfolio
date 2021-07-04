@@ -6,6 +6,11 @@
   &-contact
     @include dfr()
     align-items: flex-start
+    opacity: 1
+    transition: all 0.4s
+    &:hover
+      opacity: 0.5
+
     &__icon
       margin-right: 20px
       svg
@@ -25,5 +30,9 @@
       line-height: 25px
       color: #fff
       margin-right: 50px
+      opacity: 1
+      transition: all 0.4s
+      &:hover
+        opacity: 0.5
       &:last-child
         margin-right: 0px
