@@ -1,0 +1,36 @@
+.resume
+  margin-top: 100px
+  &-list
+    margin-top: 50px
+    @include dfr()
+    flex-wrap: wrap
+  &-item
+    width: calc(50% - 20px)
+    &--skills
+      margin-top: 50px
+      .resume-subitem
+        margin-bottom: 20px
+      .resume-sublist
+        flex-direction: row
+        flex-wrap: wrap
+        max-width: 600px
+      .resume-subitem
+        width: calc(50% - 20px)
+  &-sublist
+    @include dfc()
+    margin-top: 25px
+    max-width: 400px
+  &-subitem
+    margin-bottom: 40px
+    &__title
+      font-size: 26px
+      line-height: 32px
+      margin-bottom: 10px
+    &__subtitle
+      font-size: 20px
+      line-height: 26px
+      margin-bottom: 10px
+    &__text
+      font-size: 18px
+      color: #a0a4b0
+
