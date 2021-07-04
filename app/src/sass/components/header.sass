@@ -1,0 +1,29 @@
+.header
+  padding: 20px 0px
+  .container
+    @include dfr()
+    justify-content: space-between
+  &-contact
+    @include dfr()
+    align-items: flex-start
+    &__icon
+      margin-right: 20px
+      svg
+        width: 30px
+        height: auto
+        path
+          fill: #fff
+    &__text
+      font-size: 20px
+      line-height: 25px
+      color: #fff
+      margin-top: 2px
+  &-nav
+    @include dfr()
+    a
+      font-size: 20px
+      line-height: 25px
+      color: #fff
+      margin-right: 50px
+      &:last-child
+        margin-right: 0px
