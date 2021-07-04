@@ -1,0 +1,51 @@
+.footer
+  margin-top: 70px
+  .container
+    @include dfr()
+    justify-content: space-between
+    position: relative
+    padding-top: 30px
+    padding-bottom: 30px
+    &::before
+      content: ""
+      width: calc(100% - 160px)
+      height: 1px
+      background-color: #1f2128
+      position: absolute
+      top: 0
+      left: 80px
+      @media screen and ( max-width: 1366px )
+        width: calc(100% - 80px)
+        left: 40px
+      @media screen and ( max-width: 767px )
+        width: calc(100% - 40px)
+        left: 20px
+  &-links
+    @include dfr()
+  &-item
+    margin-right: 30px
+    a
+      display: block
+      width: 30px
+      height: auto
+      svg
+        width: 100%
+        height: auto
+        path
+          fill: #fff
+  &-contact
+    @include dfr()
+    &__icon
+      width: 30px
+      height: auto
+      margin-right: 20px
+      svg
+        width: 100%
+        height: auto
+        path
+          fill: #fff
+    &__text
+      font-size: 20px
+      line-height: 25px
+      color: #fff
+      margin-top: 2px
