@@ -7,33 +7,62 @@
     margin-top: 50px
     @include dfr()
     flex-wrap: wrap
+    @media screen and ( max-width: 767px )
+      margin-top: 0px
   &-item
     width: calc(50% - 20px)
+    @media screen and ( max-width: 767px )
+      width: 100%
+      margin-top: 50px
     &--skills
       margin-top: 50px
-      .resume-subitem
-        margin-bottom: 20px
+      @media screen and ( max-width: 1200px )
+        width: calc(100% - 70px)
       .resume-sublist
         flex-direction: row
         flex-wrap: wrap
         max-width: 600px
+        justify-content: space-between
+        @media screen and ( max-width: 1200px )
+          max-width: none
+        @media screen and ( max-width: 500px )
+          flex-direction: column
       .resume-subitem
         width: calc(50% - 20px)
+        margin-bottom: 20px
+        @media screen and ( max-width: 500px )
+          width: 100%
+          margin-bottom: 10px
   &-sublist
     @include dfc()
     margin-top: 25px
     max-width: 400px
+    @media screen and ( max-width: 767px )
+      max-width: 600px
   &-subitem
     margin-bottom: 40px
     &__title
       font-size: 26px
       line-height: 32px
       margin-bottom: 10px
+      @media screen and ( max-width: 767px )
+        font-size: 24px
+        line-height: 30px
+      @media screen and ( max-width: 500px )
+        font-size: 20px
+        line-height: 26px
     &__subtitle
       font-size: 20px
       line-height: 26px
       margin-bottom: 10px
+      @media screen and ( max-width: 767px )
+        font-size: 18px
+        line-height: 24px
     &__text
       font-size: 18px
+      line-height: 24px
       color: #a0a4b0
+      @media screen and ( max-width: 500px )
+        font-size: 16px
+        line-height: 20px
 
